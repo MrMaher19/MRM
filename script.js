@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var seeProgramsBtn = document.getElementById("seeProgramsBtn");
-    var learnMoreBtn = document.getElementById("learnMoreBtn");
+    var seeProgramsBtn = document.querySelector(".seeProgramsBtn");
+    var learnMoreBtn = document.querySelector(".learnMoreBtn");
 
     // Function to set the original styles of the buttons
     function setOriginalStyles(btn) {
-        btn.innerHTML = btn.id === "seeProgramsBtn" ? "SEE PROGRAMS" : "LEARN MORE";
+        btn.innerHTML = btn.classList.contains("seeProgramsBtn") ? "SEE PROGRAMS" : "LEARN MORE";
         btn.style.backgroundColor = "transparent";
         btn.style.color = "rgb(254, 230, 198)";
         btn.style.border = "2px solid rgb(254, 230, 198)";
